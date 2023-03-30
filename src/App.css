@@ -1,1 +1,81 @@
+body {
+  background-color: #ebf5f0;
+}
 
+.main-page {
+  height: 100vh;
+  padding: 1rem;
+}
+
+.planets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  gap: 8px;
+  margin-top: 5rem;
+}
+
+.individual-planet {
+  cursor: pointer;
+  background: rgb(129, 105, 152);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0;
+}
+
+.planet-border {
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-color: #9ca3af;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.planet-border:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-color: #9ca3af;
+  border-radius: 20px;
+  transition-duration: 300ms;
+  transform: scale(1.1);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.planet-detail {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.planet-name {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(67, 67, 203);
+}
+
+.planet-icon {
+  animation: bounce 3s infinite;
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}

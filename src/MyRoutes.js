@@ -9,5 +9,4 @@ const MyRoutes = () => {
     </Routes>
   );
 };
-
 export default MyRoutes;
