@@ -61,7 +61,11 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className='individual-planet'></div>
+            
+            <div className="space">
+              <div id={`${planet.Name}`}><span className="shadow"></span></div>
+            </div>
+            
           </div>
         ))}
       </div>

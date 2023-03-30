@@ -1,4 +1,5 @@
-import './App.css';
+// import './App.css';
+import './Planets.css';
 import MyRoutes from './MyRoutes';
 
 function App() {
