@@ -53,7 +53,7 @@
 
 /* Mercury decoration */
 
-.space .solarSys .mercuryLine1 {
+.space .solarSys .MercuryLine1 {
 
     width: 1.25em;
     height: 40em;
@@ -62,9 +62,9 @@
     top: 8px;
     }
     
-    .space .solarSys .mercuryLine1:before,
+    .space .solarSys .MercuryLine1:before,
     
-    .space .solarSys .mercuryLine1:after {
+    .space .solarSys .MercuryLine1:after {
     
     content: "";
     width: 2em;
@@ -78,14 +78,14 @@
     transform-origin: 0 100%;
     }
     
-    .space .solarSys .mercuryLine1:after {
+    .space .solarSys .MercuryLine1:after {
     top: 140px;
     left: 100px;
     transform: rotate(-170deg);
     transform-origin: 100% 100%;
     background: radial-gradient( rgba(240, 176, 81, 0.658), rgba(233, 223, 223, 0) 58%);
     }
-  .space .solarSys .mercuryLine2 {
+  .space .solarSys .MercuryLine2 {
   
     width: 1.25em;
     height: 40em;
@@ -94,9 +94,9 @@
     top: 8px;
     }
     
-    .space .solarSys .mercuryLine2:before,
+    .space .solarSys .MercuryLine2:before,
     
-    .space .solarSys .mercuryLine2:after {
+    .space .solarSys .MercuryLine2:after {
     
     content: "";
     width: 1em;
@@ -110,7 +110,7 @@
     transform-origin: 0 100%;
     }
     
-    .space .solarSys .mercuryLine2:after {
+    .space .solarSys .MercuryLine2:after {
     top: 50px;
     left: 30px;
     transform: rotate(-170deg);
