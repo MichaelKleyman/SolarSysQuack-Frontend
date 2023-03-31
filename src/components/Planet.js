@@ -9,6 +9,23 @@ const Planet = () => {
 
   return (
     <div>
+      <section className='planet-image'>
+        <div className='card2'>
+          <div className='planet-detail'>
+            <h4 className='planet-name'>{name}</h4>
+          </div>
+          <div className='space'>
+            <div className='solarSys' id={`${name}`}>
+              <div className={`${name}Line1`}></div>
+              <div className={`${name}Line2`}></div>
+              <div className={`${name}Line3`}></div>
+              <div className={`${name}Line4`}></div>
+              <div className={`${name}Line5`}></div>
+              <div className={`${name}Rings`}></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <button
         style={{ border: 'none' }}
         className='go-back'
@@ -18,7 +35,7 @@ const Planet = () => {
         Go back
       </button>
       <p className='name'>{name}</p>
-      <div id={`${name}`}></div>
+      {/* <div id={`${name}`}></div> */}
     </div>
   );
 };

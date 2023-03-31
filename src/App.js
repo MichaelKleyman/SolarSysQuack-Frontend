@@ -1,5 +1,4 @@
-// import './App.css';
-import './styles/App.css';
+// import './styles/App.css';
 import './styles/Planets.css';
 import './styles/Mercury.css';
 import './styles/Venus.css';
