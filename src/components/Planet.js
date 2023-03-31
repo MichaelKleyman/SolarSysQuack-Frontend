@@ -1,11 +1,25 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+import Axios from 'axios';
 import { useNavigate } from 'react-router';
 import { useParams } from 'react-router';
 import { BiArrowBack } from 'react-icons/bi';
+import { Client, BASE_URL } from './api';
 
 const Planet = () => {
+  const [planet, setPlanet] = useState(null);
+
   const navigate = useNavigate();
   const { name } = useParams();
+
+  
+  useEffect(() => {
+    const getPlanetData = async () => {
+      let planetData = await Client.get(`${BASE_URL}/quackBack/planet/moons/${name}`)
+      console.log(planetData.data)
+      setPlanet(planetData.data)
+    }
+    getPlanetData()
+  }, [])
 
   return (
     <div>
@@ -35,7 +49,10 @@ const Planet = () => {
         Go back
       </button>
       <p className='name'>{name}</p>
-      {/* <div id={`${name}`}></div> */}
+      <p>{planet?.diameter}</p>
+      {planet?.moons.map((element, index) => (
+        <div key={index}>{element.name}</div>
+      ))}
     </div>
   );
 };
