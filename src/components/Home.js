@@ -8,11 +8,13 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [selectedPlanet, setSelectedPlanet] = useState('');
   const theme = useTheme();
+  const navigate = useNavigate();
   //   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClickOpen = (name) => {
@@ -23,6 +25,10 @@ const Home = () => {
   const handleClose = () => {
     setOpen(false);
     setSelectedPlanet('');
+  };
+
+  const seePlanet = () => {
+    navigate(`planet/${selectedPlanet}`);
   };
 
   const planets = [
@@ -57,22 +63,23 @@ const Home = () => {
 
               <div className='space'>
                 <div className='solarSys' id={`${planet.Name}`}>
-                
-                    {planet.Name === 'Saturn' ? (
-                  <>
-                  <div className="saturnLine1"></div>
-                  <div className="saturnLine2"></div>
-                  <div className="rings"></div>
-                  </>
-                ) : planet.Name === 'Earth' ? (
-                  <>
-                  <div className="earthLine1"></div>
-                  <div className="earthLine2"></div>
-                  <div className="earthLine3"></div>
-                  <div className="earthLine4"></div>
-                  <div className="earthLine5"></div>
-                  </>
-                ) : <div></div>}
+                  {planet.Name === 'Saturn' ? (
+                    <>
+                      <div className='saturnLine1'></div>
+                      <div className='saturnLine2'></div>
+                      <div className='rings'></div>
+                    </>
+                  ) : planet.Name === 'Earth' ? (
+                    <>
+                      <div className='earthLine1'></div>
+                      <div className='earthLine2'></div>
+                      <div className='earthLine3'></div>
+                      <div className='earthLine4'></div>
+                      <div className='earthLine5'></div>
+                    </>
+                  ) : (
+                    <div></div>
+                  )}
                 </div>
               </div>
             </div>
@@ -97,7 +104,7 @@ const Home = () => {
           <Button autoFocus onClick={handleClose}>
             Close
           </Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button onClick={seePlanet} autoFocus>
             See more
           </Button>
         </DialogActions>
