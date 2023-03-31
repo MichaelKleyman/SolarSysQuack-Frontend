@@ -8,11 +8,13 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [selectedPlanet, setSelectedPlanet] = useState('');
   const theme = useTheme();
+  const navigate = useNavigate();
   //   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClickOpen = (name) => {
@@ -23,6 +25,10 @@ const Home = () => {
   const handleClose = () => {
     setOpen(false);
     setSelectedPlanet('');
+  };
+
+  const seePlanet = () => {
+    navigate(`planet/${selectedPlanet}`);
   };
 
   const planets = [
@@ -49,14 +55,13 @@ const Home = () => {
             className='planet-border'
             onClick={() => handleClickOpen(planet.Name)}
           >
-            <div className="card">
+            <div className='card'>
               <div className='planet-detail'>
                 <div></div>
                 <h4 className='planet-name'>{planet.Name}</h4>
-                
               </div>
-              
-              <div className="space">
+
+              <div className='space'>
                 <div className='solarSys' id={`${planet.Name}`}>
                   <div className={`${planet.Name}Line1`}></div>
                   <div className={`${planet.Name}Line2`}></div>
@@ -89,7 +94,7 @@ const Home = () => {
           <Button autoFocus onClick={handleClose}>
             Close
           </Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button onClick={seePlanet} autoFocus>
             See more
           </Button>
         </DialogActions>
