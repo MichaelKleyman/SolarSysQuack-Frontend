@@ -25,7 +25,7 @@
   font-size: x-large;
   text-transform: uppercase;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, .5fr));
+  grid-template-columns: repeat(3, minmax(0, 0.5fr));
 }
 
 .planet-name {
@@ -64,4 +64,32 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 0.5fr));
   }
+}
+
+.go-back {
+  padding: 2rem;
+  margin: 1rem;
+  background: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: blue;
+}
+
+.go-back:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+.name {
+  margin: 2rem;
+}
+
+.container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  gap: 8px;
 }
