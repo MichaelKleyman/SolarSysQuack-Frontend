@@ -49,23 +49,31 @@ const Home = () => {
             className='planet-border'
             onClick={() => handleClickOpen(planet.Name)}
           >
-            <div className='planet-detail'>
-              <div></div>
-              <h4 className='planet-name'>{planet.Name}</h4>
-              <div className='planet-icon'>
-                <GiRingedPlanet
-                  size={25}
-                  style={{
-                    color: 'blue',
-                  }}
-                />
+            <div className="card">
+              <div className='planet-detail'>
+                <div></div>
+                <h4 className='planet-name'>{planet.Name}</h4>
+                
               </div>
+              
+              <div className="space">
+                <div className='solarSys' id={`${planet.Name}`}>
+                
+                    {planet.Name === 'Saturn' ? (
+                  <>
+                  <div className="saturnLine1"></div>
+                  <div className="saturnLine2"></div>
+                  <div className="saturnLine3"></div>
+                  <div className="saturnLine4"></div>
+                  <div className="rings"></div>
+                  </>
+                ) : <div></div>}
+                </div>
+                
+             
+          </div>
+              
             </div>
-            
-            <div className="space">
-              <div id={`${planet.Name}`}><span className="shadow"></span></div>
-            </div>
-            
           </div>
         ))}
       </div>
