@@ -70,8 +70,7 @@ const Home = () => {
                   <div className={`${planet.Name}Line5`}></div>
                   <div className={`${planet.Name}Rings`}></div>
                 </div>
-          </div>
-              
+              </div>
             </div>
           </div>
         ))}
