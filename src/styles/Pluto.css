@@ -1,0 +1,48 @@
+#Pluto{
+    background: black;
+    margin: 0;
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
+    background: radial-gradient(circle at 100px 300px, rgb(229, 202, 165), rgb(190, 130, 50));
+}
+.space #Pluto {
+    width: 280px;
+    height: 280px;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    -o-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  #Pluto .shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-300px);
+    -moz-transform: rotateX(90deg) translateZ(-300px);
+    -ms-transform: rotateX(90deg) translateZ(-300px);
+    -o-transform: rotateX(90deg) translateZ(-300px);
+    transform: rotateX(90deg) translateZ(-300px);
+    z-index: -1;
+    }
+
+#Pluto:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 100px, rgb(236, 224, 200), rgba(255, 255, 255, 0) 58%);
+    filter: blur(5px);
+    z-index: 2;
+}

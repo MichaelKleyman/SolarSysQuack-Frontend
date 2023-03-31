@@ -1,0 +1,42 @@
+/* outline for card that holds planets */
+.planets {
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;
+    gap: 8px;
+    margin-top: 5rem;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-color: #9ca3af;
+    border-radius: 20px;
+    transition-duration: 300ms;
+    transform: scale(1.1);
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .planet-detail {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, .5fr));
+  }
+  
+  .planet-name {
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(67, 67, 203);
+  }
