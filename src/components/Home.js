@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
-import { GiRingedPlanet } from 'react-icons/gi';
-// import useMediaQuery from '@mui/material/useMediaQuery';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [selectedPlanet, setSelectedPlanet] = useState('');
-  const theme = useTheme();
   const navigate = useNavigate();
-  //   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClickOpen = (name) => {
     setOpen(true);
@@ -57,10 +52,8 @@ const Home = () => {
           >
             <div className='card'>
               <div className='planet-detail'>
-                <div></div>
                 <h4 className='planet-name'>{planet.Name}</h4>
               </div>
-
               <div className='space'>
                 <div className='solarSys' id={`${planet.Name}`}>
                   <div className={`${planet.Name}Line1`}></div>
@@ -70,8 +63,7 @@ const Home = () => {
                   <div className={`${planet.Name}Line5`}></div>
                   <div className={`${planet.Name}Rings`}></div>
                 </div>
-          </div>
-              
+              </div>
             </div>
           </div>
         ))}

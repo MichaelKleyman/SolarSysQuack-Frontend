@@ -20,9 +20,9 @@
     -ms-perspective-origin: 50% 50%;
     -o-perspective-origin: 50% 50%;
     perspective-origin: 50% 50%;
-  }
+}
 
-  #Uranus .shadow {
+#Uranus .shadow {
     position: relative;
     width: 100%;
     height: 100%;
@@ -33,7 +33,7 @@
     -o-transform: rotateX(90deg) translateZ(-300px);
     transform: rotateX(90deg) translateZ(-300px);
     z-index: -1;
-    }
+}
 
 #Uranus:before {
     content: "";
@@ -63,4 +63,4 @@
     50px 9px 3px 2px #ffffff4d,
     -50px 10px 10px -1px #d4a05b80, 50px 10px 10px -1px #dfb97380,
     -20px 10px 2px -5px #57340c, 20px 10px 2px -5px #ffffff;
-  }
+}
