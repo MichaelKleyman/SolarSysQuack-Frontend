@@ -13,12 +13,14 @@ import './styles/Pluto.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
+import Planet from './components/Planet';
 
 function App() {
   return (
     <div className='App'>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/planet/:name' element={<Planet />} />
       </Routes>
     </div>
   );
