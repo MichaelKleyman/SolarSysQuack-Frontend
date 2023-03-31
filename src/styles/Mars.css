@@ -4,7 +4,8 @@
     border-radius: 50%;
     height: 280px;
     width: 280px;
-    background: radial-gradient(circle at 100px 300px, #8F4B44, rgb(92, 140, 230));
+    background: radial-gradient(circle at 100px 300px, #8F4B44, rgb(228, 74, 28));
+    box-shadow: inset 1px 16px 40px 3px rgba(63, 74, 224, 0.884);
 }
 
 .space #Mars {
@@ -45,3 +46,99 @@
     filter: blur(5px);
     z-index: 2;
 }
+
+.space .solarSys .MarsLine1 {
+
+    width: 2.25em;
+    height: 40em;
+    position: absolute;
+    left:10px;
+    top: 3px;
+    }
+    
+    .space .solarSys .MarsLine1:before,
+    .space .solarSys .MarsLine1:after {
+    content: "";
+    width: 10em;
+    height: 4em;
+    position: absolute;
+    top: 190px;
+    left:100px;
+    background: radial-gradient( rgb(47, 34, 224), rgba(233, 223, 223, 0) 58%);
+    border-radius: 50%;
+    transform: rotate(250deg);
+    transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .MarsLine1:after {
+      width: 10em;
+      height: 4em;
+      top: 100px;
+      left: -150px;
+      transform: rotate(207deg);
+      transform-origin: 100% 100%;
+      background: radial-gradient( rgb(62, 44, 230), rgba(233, 223, 223, 0) 58%);
+    }
+  .space .solarSys .MarsLine2 {
+    width: 1.25em;
+    height: 40em;
+    position: absolute;
+    left:10px;
+    top: 3px;
+    }
+    
+    .space .solarSys .MarsLine2:before,
+    .space .solarSys .MarsLine2:after {
+      content: "";
+      width: 15em;
+      height: 6em;
+      position: absolute;
+      top: 50px;
+      left:320px;
+      background: radial-gradient( rgb(47, 34, 224), rgba(233, 223, 223, 0) 58%);
+      border-radius: 50%;
+      transform: rotate(230deg);
+      transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .MarsLine2:after {
+      width: 3em;
+      height: 1em;
+      top: 205px;
+      left: 10px;
+      transform: rotate(90deg);
+      transform-origin: 100% 100%;
+      background: radial-gradient( rgba(47, 34, 224, 0.514), rgba(233, 223, 223, 0) 68%);
+    }
+ 
+  .space .solarSys .MarsLine3 {
+  
+    width: 1.25em;
+    height: 40em;
+    position: relative;
+    }
+    
+    .space .solarSys .MarsLine3:before,
+    .space .solarSys .MarsLine3:after {
+      content: "";
+      width: 10em;
+      height: 6em;
+      position: absolute;
+      top: -80px;
+      left: 20px;
+      /* border: 1px solid white; */
+      background: radial-gradient( rgb(47, 34, 224), rgba(233, 223, 223, 0) 58%);
+      border-radius: 50%;
+      transform: rotate(100deg);
+      transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .MarsLine3:after {
+      width: 5em;
+      height: 3em;
+      top: 10px;
+      left: -60px;
+      transform: rotate(140deg);
+      transform-origin: 100% 100%;
+      background: radial-gradient( rgba(47, 34, 224, 0.514), rgba(233, 223, 223, 0) 68%);
+    }

@@ -4,8 +4,9 @@
     border-radius: 50%;
     height: 280px;
     width: 280px;
-    background: radial-gradient(circle at 60% 50%, rgb(64, 160, 192), rgb(16, 40, 48));
-    box-shadow: inset 10px 0 30px 3px rgba(16, 20, 32, 0.7);
+    /* background: radial-gradient(circle at 60% 50%, rgb(64, 160, 192), rgb(16, 40, 48));
+    box-shadow: inset 10px 0 30px 3px rgba(16, 20, 32, 0.7); */
+    background:  rgb(16, 108, 141);
 }
 
 .space #Uranus {
@@ -44,7 +45,7 @@
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    background: radial-gradient(circle at 50% 30%, rgba(224, 255, 255, 0.9), rgba(64, 160, 192, 0) 60%);
+    background: radial-gradient(circle at 50% 30%, rgba(61, 224, 224, 0.9), rgba(64, 160, 192, 0) 60%);
     filter: blur(5px);
     z-index: 2;
 }
@@ -52,12 +53,12 @@
 .UranusRings {
     position: absolute;
     top: 6em;
-    left: -6em;
-    width: 150%;
-    height: 30%;
-    border: 20px double rgb(100, 100, 100, .5);
+    left: -5em;
+    width: 400px;
+    height: 70px;
+    border: 14px double rgba(129, 126, 122, 0.5);
     border-radius: 50%;
     border-top: 0;
-    filter: drop-shadow(10px 16px 5px #ffffff66);
-    rotate: 35deg;
+    /* filter: drop-shadow(6px 4px 5px #0f050566); */
+    rotate: 90deg;
 }
