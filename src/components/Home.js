@@ -63,9 +63,15 @@ const Home = () => {
                   <>
                   <div className="saturnLine1"></div>
                   <div className="saturnLine2"></div>
-                  <div className="saturnLine3"></div>
-                  <div className="saturnLine4"></div>
                   <div className="rings"></div>
+                  </>
+                ) : planet.Name === 'Earth' ? (
+                  <>
+                  <div className="earthLine1"></div>
+                  <div className="earthLine2"></div>
+                  <div className="earthLine3"></div>
+                  <div className="earthLine4"></div>
+                  <div className="earthLine5"></div>
                   </>
                 ) : <div></div>}
                 </div>
