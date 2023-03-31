@@ -61,11 +61,22 @@ const Home = () => {
                 />
               </div>
             </div>
-            
-            <div className="space">
+
+            {planet.Name === 'Saturn' ? (
+              <div>Saturn</div>
+            ) : planet.Name === 'Uranus' ? (
+              <div>Uranus</div>
+            ) : (
+              <div className='space'>
+                <div id={`${planet.Name}`}>
+                  <span className='shadow'></span>
+                </div>
+              </div>
+            )}
+
+            {/* <div className="space">
               <div id={`${planet.Name}`}><span className="shadow"></span></div>
-            </div>
-            
+            </div> */}
           </div>
         ))}
       </div>
