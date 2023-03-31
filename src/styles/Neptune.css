@@ -5,6 +5,7 @@
     height: 280px;
     width: 280px;
     background: radial-gradient(circle at 100px 300px, rgb(77, 101, 157), rgb(14, 12, 10));
+    box-shadow: inset 10px 0 30px 3px rgba(16, 20, 32, 0.9);
 }
 
 .space #Neptune {
@@ -20,9 +21,9 @@
     -ms-perspective-origin: 50% 50%;
     -o-perspective-origin: 50% 50%;
     perspective-origin: 50% 50%;
-  }
+}
 
-  #Neptune .shadow {
+#Neptune .shadow {
     position: relative;
     width: 100%;
     height: 100%;
@@ -33,7 +34,7 @@
     -o-transform: rotateX(90deg) translateZ(-300px);
     transform: rotateX(90deg) translateZ(-300px);
     z-index: -1;
-    }
+}
 
 #Neptune:before {
     content: "";
@@ -43,7 +44,69 @@
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    background: radial-gradient(circle at 50% 100px, rgb(236, 224, 200), rgba(255, 255, 255, 0) 58%);
+    background: radial-gradient(circle at 50% 30%, rgba(64, 80, 128, 1), rgba(0, 0, 0, 0) 58%);
     filter: blur(5px);
     z-index: 2;
+}
+
+.NeptuneLine1 {
+  position: absolute;
+  width: 65%;
+  height: 15%;
+  border-top: transparent;
+  border-bottom: 8px solid rgba(96, 120, 192, 0.7);
+  rotate: 35deg;
+  transform: translateX(55%) translateY(-80%);
+  border-radius: 60% 40%;
+  background: transparent;
+}
+
+.NeptuneLine2 {
+  position: absolute;
+  /* left: 40px;
+  top: 100px; */
+  width: 80%;
+  height: 20%;
+  border-top: transparent;
+  border-bottom: 20px solid rgba(16, 20, 32, 0.7);
+  rotate: 35deg;
+  transform: translateX(35%) translateY(-20%);
+  border-radius: 80% 60%;
+  background: transparent;
+}
+.NeptuneLine3 {
+  position: absolute;
+  width: 25%;
+  height: 8%;
+  border: 6px solid rgba(77, 101, 157, 0.1);
+  background: rgba(32, 40, 64, 0.8);
+  rotate: 35deg;
+  border-radius: 60% 40%;
+  transform: translateX(220%) translateY(255%)
+}
+
+.NeptuneLine4 {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: 6px dashed rgba(220, 220, 240, 0.7);
+  border-bottom: 3px dashed rgba(220, 220, 240, 0.9);
+  background: transparent;
+  rotate: 35deg;
+  border-radius: 80% 20%;
+  transform: translateX(150%) translateY(320%)
+}
+
+.NeptuneLine5 {
+  position: absolute;
+  width: 90%;
+  height: 45%;
+  border-top: transparent;
+  border-bottom: 18px solid rgb(32, 40, 64, 0.5);
+  rotate: 35deg;
+  transform: translateX(23%) translateY(65%);
+  border-radius: 60% 40%;
+  background: transparent;
 }
