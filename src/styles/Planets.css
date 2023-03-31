@@ -41,6 +41,11 @@
   color: rgb(67, 67, 203);
 }
 
+.planet-image {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 666px) {
   .planets {
     display: flex;

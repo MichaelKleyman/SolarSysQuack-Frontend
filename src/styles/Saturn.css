@@ -50,7 +50,7 @@
 }
 
 /* Saturn decoration */
-.card .space .solarSys .SaturnLine1 {
+.SaturnLine1 {
   position: absolute;
   left: 100px;
   top: 45px;
@@ -64,7 +64,7 @@
   background: transparent;
 }
 
-.card .space .solarSys .SaturnLine2 {
+.SaturnLine2 {
   position: absolute;
   left:40px;
   top: 100px;
@@ -78,7 +78,7 @@
   background: transparent;
 }
 
-.card .space .SaturnRings {
+.SaturnRings {
   position: absolute;
   top: 5em;
   left: -7em;

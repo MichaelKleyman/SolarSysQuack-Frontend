@@ -9,19 +9,8 @@ const Planet = () => {
 
   return (
     <div>
-      <button
-        style={{ border: 'none' }}
-        className='go-back'
-        onClick={() => navigate('/')}
-      >
-        <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
-        Go back
-      </button>
-      <div
-        className='planet-border'
-        // onClick={() => handleClickOpen(name)}
-      >
-        <div className='card'>
+      <section className='planet-image'>
+        <div className='card2'>
           <div className='planet-detail'>
             <h4 className='planet-name'>{name}</h4>
           </div>
@@ -36,12 +25,17 @@ const Planet = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* <p className='name'>{name}</p>
-      <div className='container'>
-        <div id={`${name}`}></div>
-        <div id={`${name}-container`}>sdvwevwevwe</div>
-      </div> */}
+      </section>
+      <button
+        style={{ border: 'none' }}
+        className='go-back'
+        onClick={() => navigate('/')}
+      >
+        <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
+        Go back
+      </button>
+      <p className='name'>{name}</p>
+      {/* <div id={`${name}`}></div> */}
     </div>
   );
 };
