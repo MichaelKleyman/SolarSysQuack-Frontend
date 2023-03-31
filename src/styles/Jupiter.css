@@ -5,10 +5,11 @@
   height: 280px;
   width: 280px;
   background: radial-gradient(circle at 100px 300px, rgb(229, 202, 165), rgb(190, 130, 50));
+  box-shadow: inset 10px 0 30px 3px rgba(41, 40, 40, 0.9);
 }
 
 
-.space #Jupiter {
+.space {
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
