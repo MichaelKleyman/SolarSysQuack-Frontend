@@ -5,8 +5,8 @@
   border-radius: 50%;
   height: 280px;
   width: 280px;
-  background: radial-gradient(circle at 60% 10%, rgb(255, 255, 255), rgb(80, 80, 80));
-  box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0);
+  background: radial-gradient(circle at 600px 10px, rgb(179, 125, 54), rgb(31, 51, 114));
+  box-shadow: inset 16px 0 40px 3px rgb(13, 13, 14);
 }
 
 .space #Mercury {
@@ -61,7 +61,7 @@
   top: 8px;
 }
 
-.MercuryLine1:before .MercuryLine1:after {
+.space .solarSys .MercuryLine1:before, .MercuryLine1:after {
   content: "";
   width: 2em;
   height: 2em;
@@ -90,7 +90,8 @@
   top: 8px;
 }
 
-.MercuryLine2:before .MercuryLine2:after {
+
+.space .solarSys .MercuryLine2:before, .MercuryLine2:after {
   content: "";
   width: 1em;
   height: 1em;

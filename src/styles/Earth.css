@@ -5,7 +5,7 @@
     height: 280px;
     width: 280px;
     background: radial-gradient(circle at 100px 300px, rgb(4, 68, 20), rgb(9, 12, 197));
-    box-shadow: inset 16px 0 40px 3px rgb(41, 39, 39)
+    box-shadow: inset 16px 0 40px 3px rgb(41, 39, 39);
 }
 
 .space #Earth {
@@ -56,15 +56,13 @@
     }
     
     .space .solarSys .EarthLine1:before,
-    
     .space .solarSys .EarthLine1:after {
-    
     content: "";
     width: 3em;
     height: 5em;
     position: absolute;
-    left:108px;
-    top: 90px;
+    left:110px;
+    top: 120px;
     background: radial-gradient( rgb(110, 57, 7, 0.781), rgba(255, 255, 255, 0) 88%);
     border-radius: 3em 3em 1em 1em;
     transform: rotate(230deg);
@@ -78,7 +76,6 @@
     transform-origin: 100% 100%;
     }
   .space .solarSys .EarthLine2 {
-  
     width: 1.25em;
     height: 40em;
     position: absolute;
@@ -87,15 +84,13 @@
     }
     
     .space .solarSys .EarthLine2:before,
-    
     .space .solarSys .EarthLine2:after {
-    
     content: "";
     width: 4em;
     height: 6em;
     position: absolute;
-    top: 3px;
-    left:80px;
+    top: 5px;
+    left:90px;
     background: radial-gradient( rgb(110, 57, 7, 0.781), rgba(255, 255, 255, 0) 88%);
     border-radius: 3em 3em 1em 1em;
     transform: rotate(250deg);
@@ -104,12 +99,11 @@
     
     .space .solarSys .EarthLine2:after {
     top: 5px;
-    left: 140px;
+    left: 130px;
     transform: rotate(-170deg);
     transform-origin: 100% 100%;
     }
   .space .plsolarSysanet .EarthLine3 {
-  
     width: 1.25em;
     height: 40em;
     position: absolute;
@@ -117,16 +111,13 @@
     top: 4px;
     }
     
-    .space .solarSys .saturnLine3:before,
-    
-    .space .solarSys .EarthLine3:after {
-    
+    .space .solarSys .EarthLine3:before {
     content: "";
     width: 3em;
     height: 2em;
     position: absolute;
-    left:90px;
-    top: 1px;
+    left:190px;
+    top: -10px;
     background: radial-gradient( rgba(230, 227, 225, 0.123), rgba(255, 255, 255, 0) 88%);
     border-radius: 3em 3em 1em 1em;
     transform: rotate(160deg);
@@ -140,18 +131,14 @@
     transform-origin: 100% 100%;
     }
   .space .solarSys .EarthLine4 {
-  
     width: 1.25em;
     height: 40em;
-    position: relative;
+    position: absolute;
     margin-top: 4em;
     margin-left: 2.8em;
     }
     
-    .space .solarSys .EarthLine4:before,
-    
-    .space .solarSys .EarthLine4:after {
-    
+    /* .space .solarSys .EarthLine4:before {
     content: "";
     width: 3em;
     height: 5em;
@@ -165,8 +152,7 @@
     }
     
     .space .solarSys .EarthLine4:after {
-    
     left: .6px;
     transform: rotate(-230deg);
     transform-origin: 100% 100%;
-    }
+    } */
