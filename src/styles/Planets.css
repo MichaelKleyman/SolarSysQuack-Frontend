@@ -41,7 +41,14 @@
   color: rgb(67, 67, 203);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (max-width: 666px) {
+  .planets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 667px) and (max-width: 999px) {
   .planets {
     display: grid;
     cursor: pointer;
