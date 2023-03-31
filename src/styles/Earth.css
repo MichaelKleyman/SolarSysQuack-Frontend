@@ -1,0 +1,172 @@
+#Earth{
+    background: black;
+    margin: 0;
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
+    background: radial-gradient(circle at 100px 300px, rgb(4, 68, 20), rgb(9, 12, 197));
+    box-shadow: inset 16px 0 40px 3px rgb(41, 39, 39)
+}
+
+.space #Earth {
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    -o-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  #Earth .shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-300px);
+    -moz-transform: rotateX(90deg) translateZ(-300px);
+    -ms-transform: rotateX(90deg) translateZ(-300px);
+    -o-transform: rotateX(90deg) translateZ(-300px);
+    transform: rotateX(90deg) translateZ(-300px);
+    z-index: -1;
+    }
+
+#Earth:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 100px, rgba(64, 117, 31, 0.527), rgba(255, 255, 255, 0) 58%);
+    filter: blur(5px);
+    z-index: 2;
+}
+
+/* Earth decorations */
+.space .solarSys .EarthLine1 {
+
+    width: 1.25em;
+    height: 40em;
+    position: relative;
+    }
+    
+    .space .solarSys .EarthLine1:before,
+    
+    .space .solarSys .EarthLine1:after {
+    
+    content: "";
+    width: 3em;
+    height: 5em;
+    position: absolute;
+    left:108px;
+    top: 90px;
+    background: radial-gradient( rgb(110, 57, 7, 0.781), rgba(255, 255, 255, 0) 88%);
+    border-radius: 3em 3em 1em 1em;
+    transform: rotate(230deg);
+    transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .EarthLine1:after {
+    
+    left: .6px;
+    transform: rotate(-230deg);
+    transform-origin: 100% 100%;
+    }
+  .space .solarSys .EarthLine2 {
+  
+    width: 1.25em;
+    height: 40em;
+    position: absolute;
+    left:25px;
+    top: 8px;
+    }
+    
+    .space .solarSys .EarthLine2:before,
+    
+    .space .solarSys .EarthLine2:after {
+    
+    content: "";
+    width: 4em;
+    height: 6em;
+    position: absolute;
+    top: 3px;
+    left:80px;
+    background: radial-gradient( rgb(110, 57, 7, 0.781), rgba(255, 255, 255, 0) 88%);
+    border-radius: 3em 3em 1em 1em;
+    transform: rotate(250deg);
+    transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .EarthLine2:after {
+    top: 5px;
+    left: 140px;
+    transform: rotate(-170deg);
+    transform-origin: 100% 100%;
+    }
+  .space .plsolarSysanet .EarthLine3 {
+  
+    width: 1.25em;
+    height: 40em;
+    position: absolute;
+    left:90px;
+    top: 4px;
+    }
+    
+    .space .solarSys .saturnLine3:before,
+    
+    .space .solarSys .EarthLine3:after {
+    
+    content: "";
+    width: 3em;
+    height: 2em;
+    position: absolute;
+    left:90px;
+    top: 1px;
+    background: radial-gradient( rgba(230, 227, 225, 0.123), rgba(255, 255, 255, 0) 88%);
+    border-radius: 3em 3em 1em 1em;
+    transform: rotate(160deg);
+    transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .EarthLine3:after {
+    top: 40px;
+    left: 0px;
+    transform: rotate(-280deg);
+    transform-origin: 100% 100%;
+    }
+  .space .solarSys .EarthLine4 {
+  
+    width: 1.25em;
+    height: 40em;
+    position: relative;
+    margin-top: 4em;
+    margin-left: 2.8em;
+    }
+    
+    .space .solarSys .EarthLine4:before,
+    
+    .space .solarSys .EarthLine4:after {
+    
+    content: "";
+    width: 3em;
+    height: 5em;
+    position: absolute;
+    left:108px;
+    top: 90px;
+    background: radial-gradient( rgb(110, 57, 7, 0.781), rgba(255, 255, 255, 0) 88%);
+    border-radius: 3em 3em 1em 1em;
+    transform: rotate(230deg);
+    transform-origin: 0 100%;
+    }
+    
+    .space .solarSys .EarthLine4:after {
+    
+    left: .6px;
+    transform: rotate(-230deg);
+    transform-origin: 100% 100%;
+    }
