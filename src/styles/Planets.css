@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&display=swap');
+
+body {
+  background-color: #ebf5f0;
+}
+
 /* outline for card that holds planets */
 .planets {
   display: grid;
@@ -27,14 +33,28 @@
   font-weight: bold;
   font-size: x-large;
   text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
-.planet-detail {
+.planet-detail-container {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, .5fr));
+  grid-template-columns: repeat(4, minmax(0, 0.5fr));
+  margin-top: 3rem;
+}
+
+.planet-detail {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .planet-name {
@@ -78,4 +98,79 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 0.5fr));
   }
+}
+
+.go-back {
+  padding: 1rem;
+  margin: 0.2px;
+  background: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: blue;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+  /* mix-blend-mode: overlay; */
+  background-blend-mode: overlay;
+  pointer-events: all;
+}
+
+.go-back:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 300ms;
+  color: blue;
+}
+
+.description-label {
+  color: blue;
+}
+
+.planet-background {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  mix-blend-mode: overlay;
+}
+
+.mini-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat';
+  color: blue;
+}
+
+.mini-navbar-button {
+  padding-left: 2rem;
+  color: blue;
+}
+
+.mini-navbar-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 400ms;
+}
+
+#overview {
+  color: rgb(3, 3, 68);
+  font-weight: bolder;
+  font-size: large;
+}
+
+#facts {
+  color: rgb(3, 3, 68);
+  font-weight: bolder;
+  font-size: large;
+}
+
+#moons {
+  color: rgb(3, 3, 68);
+  font-weight: bolder;
+  font-size: large;
 }
