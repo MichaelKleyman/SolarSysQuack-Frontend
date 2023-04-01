@@ -18,12 +18,21 @@
   cursor: pointer;
 }
 
-.planet-detail {
-  text-align: center;
+.planet-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: x-large;
   text-transform: uppercase;
+}
+
+.planet-detail {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 0.5fr));
 }
