@@ -4,9 +4,13 @@ import { useParams } from 'react-router';
 import { BiArrowBack } from 'react-icons/bi';
 import { Client, BASE_URL } from './api';
 import starsImg from '../images/stars.jpg';
+import Moons from './Moons';
 
 const Planet = () => {
   const [planet, setPlanet] = useState(null);
+  const [overview, setOverview] = useState(true);
+  const [facts, setFacts] = useState(false);
+  const [moons, setMoons] = useState(false);
 
   const navigate = useNavigate();
   const { name } = useParams();
@@ -16,11 +20,27 @@ const Planet = () => {
       let planetData = await Client.get(
         `${BASE_URL}/quackBack/planet/moons/${name}`
       );
-      console.log(planetData.data);
+      //   console.log(planetData.data);
       setPlanet(planetData.data);
     };
     getPlanetData();
   }, []);
+
+  const handleClick = (name) => {
+    if (name === 'overview') {
+      setOverview(true);
+      setFacts(false);
+      setMoons(false);
+    } else if (name === 'facts') {
+      setOverview(false);
+      setFacts(true);
+      setMoons(false);
+    } else if (name === 'moons') {
+      setOverview(false);
+      setFacts(false);
+      setMoons(true);
+    }
+  };
 
   return (
     <div>
@@ -70,18 +90,22 @@ const Planet = () => {
         </section>
       </div>
       <div className='mini-navbar'>
-        <p>Facts</p>
-        <p>Moons</p>
+        <p
+          className='mini-navbar-button'
+          onClick={() => handleClick('overview')}
+        >
+          Overview
+        </p>
+        <p className='mini-navbar-button' onClick={() => handleClick('facts')}>
+          Facts
+        </p>
+        <p className='mini-navbar-button' onClick={() => handleClick('moons')}>
+          Moons
+        </p>
       </div>
-      <section className='planet-moons'>
-        {planet?.moons.map((moon, index) => (
-          <div key={index}>
-            <p className='moon-name'>Name: {moon.name}</p>
-            <p>Diameter: {moon.diameter}</p>
-            <p>History: {moon.history}</p>
-          </div>
-        ))}
-      </section>
+      {overview && <div>overview</div>}
+      {facts && <div>facts</div>}
+      {moons && <Moons moons={planet?.moons} />}
     </div>
   );
 };
