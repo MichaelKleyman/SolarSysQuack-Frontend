@@ -58,13 +58,13 @@
     .PlutoLine1:before,
     .PlutoLine1:after {
     content: "";
-    height: 281px;
-    width: 281px;
+    height: 280px;
+    width: 280px;
     position: absolute;
     background: rgba(82, 55, 31, 0.212);
     border-radius: 50%;
     /* rotate: 210deg; */
-    transform: translateX(-1%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
     transform-origin: 0 100%;
     }
     
