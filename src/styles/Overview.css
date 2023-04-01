@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
-.facts-container {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.overview-container {
+  margin: 2rem;
 }
 
-.fact {
-  padding: 0.8rem;
+.overview {
+  padding: 1.3rem;
   border-radius: 20px;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-color: #60a5fa;
   background-color: rgba(72, 95, 226, 0.1);
-  margin: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .title {
@@ -21,17 +21,4 @@
   letter-spacing: 0.2em;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.fact-count {
-  font-weight: bolder;
-  color: blue;
-  display: flex;
-  align-items: center;
-}
-
-.fact {
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.1em;
 }
