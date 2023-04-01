@@ -78,6 +78,7 @@ const Home = () => {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
+            {/* add another key:value pair to db for jokes to render in the */}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </DialogContentText>

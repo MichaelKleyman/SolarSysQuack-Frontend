@@ -26,7 +26,7 @@ const Planet = () => {
       <section className='planet-image'>
         <div className='card2'>
           <div className='planet-detail'>
-            <h4 className='planet-name'>{name}</h4>
+            <h4 className='planet-name-page'>Let's "QUACK" About {name}</h4>
           </div>
           <div className='space'>
             <div className='solarSys' id={`${name}`}>
@@ -48,11 +48,20 @@ const Planet = () => {
         <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
         Go back
       </button>
-      <p className='name'>{name}</p>
-      <p>{planet?.diameter}</p>
-      {planet?.moons.map((element, index) => (
-        <div key={index}>{element.name}</div>
-      ))}
+      <section className='planet-data'>
+        <p className='name'>{name}</p>
+        <p>{planet?.diameter}</p>
+        <p>{planet?.mass}</p>
+      </section>
+      <section className='planet-moons'>
+        {planet?.moons.map((moon, index) => (
+          <div key={index}>
+            <p className='moon-name'>Name: {moon.name}</p>
+            <p>Diameter: {moon.diameter}</p>
+            <p>History: {moon.history}</p>
+          </div>
+        ))}
+      </section>
     </div>
   );
 };
