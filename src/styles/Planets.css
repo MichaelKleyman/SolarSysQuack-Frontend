@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
+
+body {
+  background-color: #ebf5f0;
+}
+
 /* outline for card that holds planets */
 .planets {
   display: grid;
@@ -27,14 +33,28 @@
   font-weight: bold;
   font-size: x-large;
   text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
-.planet-detail {
+.planet-detail-container {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 0.5fr));
+  grid-template-columns: repeat(4, minmax(0, 0.5fr));
+  margin-top: 3rem;
+}
+
+.planet-detail {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .planet-name {
@@ -81,29 +101,43 @@
 }
 
 .go-back {
-  padding: 2rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 0.2px;
   background: none;
   font-weight: bold;
   display: flex;
   align-items: center;
   color: blue;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+  /* mix-blend-mode: overlay; */
+  background-blend-mode: overlay;
+  pointer-events: all;
 }
 
 .go-back:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition-duration: 300ms;
+  color: blue;
 }
 
-.name {
-  margin: 2rem;
+.description-label {
+  color: blue;
 }
 
-.container {
-  margin: 2rem;
+.planet-background {
+  position: absolute;
+  width: 100%;
+  height: 76%;
+  object-fit: cover;
+  mix-blend-mode: overlay;
+}
+
+.mini-navbar {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 0.5fr));
   place-items: center;
-  gap: 8px;
+  gap: 0px;
 }
