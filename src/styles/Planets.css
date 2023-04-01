@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&display=swap');
 
 body {
   background-color: #ebf5f0;
@@ -143,13 +143,34 @@ body {
   letter-spacing: 0.1em;
   font-family: 'Dancing Script', cursive;
   font-family: 'Montserrat';
-  font-weight: bolder;
+  color: blue;
 }
 
 .mini-navbar-button {
   padding-left: 2rem;
+  color: blue;
+}
+
+.mini-navbar-button:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition-duration: 300ms;
-  color: blue;
+  transition-duration: 400ms;
+}
+
+#overview {
+  color: rgb(3, 3, 68);
+  font-weight: bolder;
+  font-size: large;
+}
+
+#facts {
+  color: rgb(3, 3, 68);
+  font-weight: bolder;
+  font-size: large;
+}
+
+#moons {
+  color: rgb(3, 3, 68);
+  font-weight: bolder;
+  font-size: large;
 }

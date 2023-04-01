@@ -1,0 +1,20 @@
+.facts-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fact {
+  padding: 0.8rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-color: #60a5fa;
+  background-color: rgba(72, 95, 226, 0.1);
+  margin: 10px;
+}
+
+.fact-count {
+  font-weight: bolder;
+  color: blue;
+}

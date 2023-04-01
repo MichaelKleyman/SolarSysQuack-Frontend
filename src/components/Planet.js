@@ -5,6 +5,7 @@ import { BiArrowBack } from 'react-icons/bi';
 import { Client, BASE_URL } from './api';
 import starsImg from '../images/stars.jpg';
 import Moons from './Moons';
+import Facts from './Facts';
 
 const Planet = () => {
   const [planet, setPlanet] = useState(null);
@@ -92,19 +93,28 @@ const Planet = () => {
       <div className='mini-navbar'>
         <p
           className='mini-navbar-button'
+          id={`${overview ? 'overview' : ''}`}
           onClick={() => handleClick('overview')}
         >
           Overview
         </p>
-        <p className='mini-navbar-button' onClick={() => handleClick('facts')}>
+        <p
+          className='mini-navbar-button'
+          id={`${facts ? 'facts' : ''}`}
+          onClick={() => handleClick('facts')}
+        >
           Facts
         </p>
-        <p className='mini-navbar-button' onClick={() => handleClick('moons')}>
+        <p
+          className='mini-navbar-button'
+          id={`${moons ? 'moons' : ''}`}
+          onClick={() => handleClick('moons')}
+        >
           Moons
         </p>
       </div>
       {overview && <div>overview</div>}
-      {facts && <div>facts</div>}
+      {facts && <Facts planet={planet} />}
       {moons && <Moons moons={planet?.moons} />}
     </div>
   );
