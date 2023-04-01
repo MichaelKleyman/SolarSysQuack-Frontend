@@ -7,14 +7,14 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useNavigate } from 'react-router';
 
-const Home = () => {
+const Home = ({ planets }) => {
   const [open, setOpen] = useState(false);
-  const [selectedPlanet, setSelectedPlanet] = useState('');
+  const [selectedPlanet, setSelectedPlanet] = useState({});
   const navigate = useNavigate();
 
-  const handleClickOpen = (name) => {
+  const handleClickOpen = (planet) => {
     setOpen(true);
-    setSelectedPlanet(name);
+    setSelectedPlanet(planet);
   };
 
   const handleClose = () => {
@@ -23,20 +23,8 @@ const Home = () => {
   };
 
   const seePlanet = () => {
-    navigate(`planet/${selectedPlanet}`);
+    navigate(`planet/${selectedPlanet.name}`);
   };
-
-  const planets = [
-    { Name: 'Mercury' },
-    { Name: 'Venus' },
-    { Name: 'Earth' },
-    { Name: 'Mars' },
-    { Name: 'Jupiter' },
-    { Name: 'Saturn' },
-    { Name: 'Uranus' },
-    { Name: 'Neptune' },
-    { Name: 'Pluto' },
-  ];
 
   return (
     <div className='main-page'>
@@ -44,24 +32,24 @@ const Home = () => {
         <h1>Our Solar System</h1>
       </div>
       <div className='planets'>
-        {planets.map((planet, i) => (
+        {planets?.map((planet, i) => (
           <div
             key={i}
             className='planet-border'
-            onClick={() => handleClickOpen(planet.Name)}
+            onClick={() => handleClickOpen(planet)}
           >
             <div className='card'>
               <div className='planet-detail'>
-                <h4 className='planet-name'>{planet.Name}</h4>
+                <h4 className='planet-name'>{planet.name}</h4>
               </div>
               <div className='space'>
-                <div className='solarSys' id={`${planet.Name}`}>
-                  <div className={`${planet.Name}Line1`}></div>
-                  <div className={`${planet.Name}Line2`}></div>
-                  <div className={`${planet.Name}Line3`}></div>
-                  <div className={`${planet.Name}Line4`}></div>
-                  <div className={`${planet.Name}Line5`}></div>
-                  <div className={`${planet.Name}Rings`}></div>
+                <div className='solarSys' id={`${planet.name}`}>
+                  <div className={`${planet.name}Line1`}></div>
+                  <div className={`${planet.name}Line2`}></div>
+                  <div className={`${planet.name}Line3`}></div>
+                  <div className={`${planet.name}Line4`}></div>
+                  <div className={`${planet.name}Line5`}></div>
+                  <div className={`${planet.name}Rings`}></div>
                 </div>
               </div>
             </div>
@@ -74,13 +62,12 @@ const Home = () => {
         aria-labelledby='responsive-dialog-title'
       >
         <DialogTitle id='responsive-dialog-title'>
-          {selectedPlanet} Details
+          <span style={{ color: 'blue' }}>{selectedPlanet.name}</span> Details
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
             {/* add another key:value pair to db for jokes to render in the */}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {selectedPlanet.overview}
           </DialogContentText>
         </DialogContent>
         <DialogActions>

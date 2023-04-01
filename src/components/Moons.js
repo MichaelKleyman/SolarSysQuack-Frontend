@@ -1,7 +1,6 @@
 import '../styles/Moons.css';
 
 const Moons = ({ moons }) => {
-  console.log(moons);
   return (
     <div>
       <h1 className='title'>Moons</h1>
