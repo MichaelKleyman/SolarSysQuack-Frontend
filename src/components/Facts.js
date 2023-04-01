@@ -8,15 +8,15 @@ const Facts = ({ planet }) => {
       <div className='facts-container'>
         <div className='fact'>
           <p className='fact-count'>Fact One</p>
-          {factOne}
+          <p>{factOne}</p>
         </div>
         <div className='fact'>
           <p className='fact-count'>Fact Two</p>
-          {factTwo}
+          <p>{factTwo}</p>
         </div>
         <div className='fact'>
           <p className='fact-count'>Fact Three</p>
-          {factThree}
+          <p>{factThree}</p>
         </div>
       </div>
     </div>

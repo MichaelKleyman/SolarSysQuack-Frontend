@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
+
 .facts-container {
   padding: 2rem;
   display: grid;
@@ -17,4 +19,10 @@
 .fact-count {
   font-weight: bolder;
   color: blue;
+}
+
+.fact {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
 }

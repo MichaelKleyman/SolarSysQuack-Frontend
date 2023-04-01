@@ -6,6 +6,7 @@ import { Client, BASE_URL } from './api';
 import starsImg from '../images/stars.jpg';
 import Moons from './Moons';
 import Facts from './Facts';
+import Overview from './Overview';
 
 const Planet = () => {
   const [planet, setPlanet] = useState(null);
@@ -113,7 +114,7 @@ const Planet = () => {
           Moons
         </p>
       </div>
-      {overview && <div>overview</div>}
+      {overview && <Overview overview={planet.overview}/>}
       {facts && <Facts planet={planet} />}
       {moons && <Moons moons={planet?.moons} />}
     </div>
