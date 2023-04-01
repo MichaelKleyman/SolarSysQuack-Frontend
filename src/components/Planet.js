@@ -26,7 +26,7 @@ const Planet = () => {
       <section className='planet-image'>
         <div className='card2'>
           <div className='planet-detail'>
-            <h4 className='planet-name'>{name}</h4>
+            <h4 className='planet-name-page'>Let's "QUACK" About {name}</h4>
           </div>
           <div className='space'>
             <div className='solarSys' id={`${name}`}>
