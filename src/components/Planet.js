@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Axios from 'axios';
 import { useNavigate } from 'react-router';
 import { useParams } from 'react-router';
 import { BiArrowBack } from 'react-icons/bi';
@@ -23,11 +22,11 @@ const Planet = () => {
 
   return (
     <div>
+      <section className='planet-title'>
+        <h4 className='planet-name-page'>Let's "QUACK" About {name}</h4>
+      </section>
       <section className='planet-image'>
         <div className='card2'>
-          <div className='planet-detail'>
-            <h4 className='planet-name-page'>Let's "QUACK" About {name}</h4>
-          </div>
           <div className='space'>
             <div className='solarSys' id={`${name}`}>
               <div className={`${name}Line1`}></div>
@@ -40,15 +39,17 @@ const Planet = () => {
           </div>
         </div>
       </section>
-      <button
-        style={{ border: 'none' }}
-        className='go-back'
-        onClick={() => navigate('/')}
-      >
-        <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
-        Go back
-      </button>
-      <section className='planet-data'>
+      <section className='planet-buttons'>
+        <button
+          style={{ border: 'none' }}
+          className='go-back'
+          onClick={() => navigate('/')}
+        >
+          <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
+          Go back
+        </button>
+      </section>
+      <section className='planet-detail'>
         <p className='name'>{name}</p>
         <p>{planet?.diameter}</p>
         <p>{planet?.mass}</p>
