@@ -109,7 +109,8 @@ body {
   align-items: center;
   color: blue;
   border: none;
-  z-index: -1;
+  position: relative;
+  z-index: 1;
   object-fit: cover;
   /* mix-blend-mode: overlay; */
   background-blend-mode: overlay;

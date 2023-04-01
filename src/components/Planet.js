@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useParams } from 'react-router';
@@ -22,7 +23,6 @@ const Planet = () => {
       let planetData = await Client.get(
         `${BASE_URL}/quackBack/planet/moons/${name}`
       );
-      //   console.log(planetData.data);
       setPlanet(planetData.data);
     };
     getPlanetData();
@@ -46,7 +46,7 @@ const Planet = () => {
 
   return (
     <div>
-      <div style={{ backgroundColor: 'rgb(0 0 0 / 0.8)' }}>
+      <div style={{ backgroundColor: 'rgb(0 0 0 / 0.6)' }}>
         <img className='planet-background' src={starsImg} alt='background' />
         <button className='go-back' onClick={() => navigate('/')}>
           <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
