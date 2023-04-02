@@ -29,7 +29,7 @@ const Home = ({ planets }) => {
   return (
     <div className='main-page'>
       <div className='header'>
-        <h1>Our Solar System</h1>
+        <h1>Quacking Through the Cosmos</h1>
       </div>
       <div className='planets'>
         {planets?.map((planet, i) => (
