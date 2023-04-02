@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Quacking Through the Cosmos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+## Team
 
-## Available Scripts
+- Patrick Knight - [GitHub](https://github.com/pfknight8)
+- Michael Kleyman - [GitHub](https://github.com/MichaelKleyman)
+- Brandi Jefferson - [GitHub](https://github.com/brandi-jeff)
 
-In the project directory, you can run:
+---
+## Date
 
-### `npm start`
+Start: 3-26-2023
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Due: 4-2-2023, 11:59 PDT
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## Technologies
 
-### `npm test`
+<img alt="PERN" width='450' src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/03/PERN.png" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* PostgreSQL
+* Express
+* React
+* Node
+* Sequelize
 
-### `npm run build`
+---
+## Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A short hackathon project provided through the #DearJuniorDev Discord Server. The theme for this project is to build an interactive website that provides information on the planets of the solar system (refer to the full prompt below). For this project, our team of three chose to use the PERN stack, as shown in the technologies section, and this repo hosts the frontend for our project. To view our project, one may visit the deployed version provided below.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/// Add info on frontend deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+## Project Links
 
-### `npm run eject`
+[ERD](https://drive.google.com/file/d/1EPkEpEISBgIFE8sKZ55jtUETzgNYlR_6/view?usp=sharing)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Backend Repo](https://github.com/pfknight8/SolarSysQuack)
+---
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] Planets made entirely out of CSS w/o imported assets
+- [ ] Planets can be selected to display modal with a brief synopsis of the planet info
+- [ ] The modal can be clicked to view more information about each planet on their info 'page'
+- [ ] Planet moons, if applicable, are also displayed on info 'page' of planet
+- [ ] Moons of planets can be selected to display own info 'page' (+MVP)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+## Quackathon Prompt
 
-## Learn More
+CHALLENGE:
+Create an educational Single Page Application website that teaches students about the solar system. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+RULES:
+1. One submission per team.
+2. Teams must consist of 2-4 DJD members.
+3. Code plagiarism is not okay. Please don't steal.
+4. All submissions must be deployed or able to be demoed in a tool such as Replit/Codepen. We want to see it in action!
+5. Submissions must also include a link to your code's repo.
+5. You may edit your submission up until the deadline.
+6. Keep it professional and appropriate.
+7. Challenge requirements are a minimum for eligibility -- If you'd like to build more, feel free to do so! Just be sure not to overstretch or overcommit your team.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+QUACKATHON REQUIREMENTS:
 
-### Code Splitting
+SUBMISSION:
+To submit, have one member of the team comment in this channel by filling out the template below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+TEAM NAME:
+TEAM MEMBERS:
+REPO:
+LIVE CODE DEMO:
 
-### Analyzing the Bundle Size
+- The website must be a SPA application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Planets:
+- Each planet of the solar system must have its own profile page.
+- Each page must include at a minimum (Name of the planet, size, distance from the Sun, three identifying facts, solid or gas core, and a visual representation of the planet)
+- NOTE: No images, assets, emojis, or SVGs are permitted. The visual representation of each planet must be made ENTIRELY out of CSS.
+- If the planet has a moon, you must display the following information for every moon (Name, history behind name, and size). 
+- Planet pages must include at least two different component styles.
+- If a planet has more than one moon, the moon information must be displayed in repeating elements.
+- All planet and moon content MUST be stored in a database.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend:
+- You must use foreign keys.
+- Planets and Moons must be stored separate from one another.
+- You must incorporate one ENUM for the planet data.
 
-### Advanced Configuration
+Homepage:
+- The homepage should be an overview of the solar system.
+- The data included will be up to each team.
+- The homepage must include at least two components that are NOT used on any planet page.
+- Homepage content does not need to be stored in a database and can be coded into your components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+README:
+- Your README must include instructions for me to spin up the project locally, as well as an overview of the tech and/or libraries used.
+- It should also include a list of the Quackathon requirements and how those were met or exceeded by your team.
 
-### Deployment
+Credit: DevJessParker 03/24/2023
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
+## Credits
 
-### `npm run build` fails to minify
+Any relevant resources or code snippets can be referenced (linked) to here.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Windows To The Universe](https://www.windows2universe.org/our_solar_system/moons_table.html)
+- [Sequelize](https://sequelize.org/docs/v6/getting-started/) Documents
+- [PostgreSQL](https://www.postgresql.org/docs/) Documents
+- [Express.js](https://expressjs.com/en/starter/installing.html) Documents
+- [Node.js](https://nodejs.org/en/docs) Documents
