@@ -54,7 +54,8 @@ const Planet = () => {
         </button>
         <section className='planet-title'>
           <h4 className='planet-name-page'>
-            Let's "QUACK" About <span style={{ color: 'blue' }}>{name}</span>
+            Let's "QUACK" About{' '}
+            <span style={{ color: 'rgb(188, 224, 255)' }}>{name}</span>
           </h4>
         </section>
         <section className='planet-image'>
