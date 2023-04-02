@@ -67,13 +67,3 @@
     background: linear-gradient(to top, rgba(255,255,255,1) 50%, rgba(255,255,255,0.3) 100%);
     transform: translateX(195%) translateY(-40%) skewY(15deg);
 }
-
-
-
-.PlutoLine1:before {
-    rotate: -45deg;
-}
-
-.PlutoLine1:after {
-    rotate: 45deg;
-}
