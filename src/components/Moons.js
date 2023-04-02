@@ -20,7 +20,9 @@ const Moons = ({ moons }) => {
             </div>
           ))
         ) : (
-          <div>No Moons</div>
+          <div>
+            <div className='notfound-container'>No Moons On This Planet</div>
+          </div>
         )}
       </section>
     </div>

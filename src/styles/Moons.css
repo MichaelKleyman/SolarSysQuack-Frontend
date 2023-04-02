@@ -41,3 +41,15 @@
   text-transform: uppercase;
   margin: 2rem;
 }
+
+.notfound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

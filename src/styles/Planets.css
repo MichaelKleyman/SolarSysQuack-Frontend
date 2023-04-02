@@ -107,7 +107,7 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
-  color: blue;
+  color: rgb(188, 224, 255);
   border: none;
   position: relative;
   z-index: 1;
@@ -121,11 +121,11 @@ body {
   cursor: pointer;
   transform: scale(1.1);
   transition-duration: 300ms;
-  color: blue;
+  color: rgb(188, 224, 255);
 }
 
 .description-label {
-  color: blue;
+  color: rgb(188, 224, 255);
 }
 
 .planet-background {
