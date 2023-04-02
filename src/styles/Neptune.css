@@ -65,10 +65,10 @@
   position: absolute;
   width: 60%;
   height: 30%;
-  background: radial-gradient(circle at 60% 30%, rgba(69, 65, 100, 0.466), rgba(59, 56, 56, 0) 58%); 
-  border-bottom: 2px solid rgb(80, 70, 70);
+  background: radial-gradient(circle at 60% 30%, rgba(69, 65, 100, 0.5), rgba(59, 56, 56, 0) 58%); 
+  border-bottom: 2px solid rgba(240, 240, 255, 0.6);
   border-top: transparent;
-  border-left: 2px solid rgba(80, 70, 70, 0.747);
+  border-left: 2px solid rgba(240, 240, 255, 0.6);
   rotate: 39deg;
   transform: translateX(60%) translateY(-60%);
   border-radius: 50%;
@@ -76,39 +76,26 @@
 
 .NeptuneLine3 {
   position: absolute;
-  width: 60%;
-  height: 30%;
-  background: radial-gradient(circle at 60% 30%, rgba(65, 63, 77, 0.466), rgba(59, 56, 56, 0) 58%); 
+  width: 20%;
+  height: 15%;
+  background: radial-gradient(circle at 60% 30%, rgba(65, 63, 77, 0.6), rgba(59, 56, 56, 0.2) 58%); 
   /* border-bottom: 2px solid rgb(80, 70, 70); */
   border-top: transparent;
   /* border-left: 2px solid rgba(80, 70, 70, 0.747); */
-  rotate: 39deg;
-  transform: translateX(60%) translateY(-60%);
+  rotate: 15deg;
+  transform: translateX(160%) translateY(380%) skewX(60deg);
   border-radius: 50%;
 }
 
-/* .NeptuneLine4 {
+.NeptuneLine4 {
   position: absolute;
   width: 40%;
   height: 10%;
   border-top: transparent;
   border-right: transparent;
   border-left: 6px dashed rgba(220, 220, 240, 0.7);
-  border-bottom: 3px dashed rgba(220, 220, 240, 0.9);
   background: transparent;
   rotate: 35deg;
   border-radius: 80% 20%;
-  transform: translateX(150%) translateY(320%)
-} */
-
-/* .NeptuneLine5 {
-  position: absolute;
-  width: 90%;
-  height: 45%;
-  border-top: transparent;
-  border-bottom: 18px solid rgb(32, 40, 64, 0.5);
-  rotate: 35deg;
-  transform: translateX(23%) translateY(65%);
-  border-radius: 60% 40%;
-  background: transparent;
-} */
+  transform: translateX(100%) translateY(480%)
+} 
