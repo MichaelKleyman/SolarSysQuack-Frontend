@@ -57,6 +57,18 @@ To get started with coding this project, one will need to install the proper tec
 ---
 ## Screenshots
 
+### **_Main Page_**
+
+<img alt="Main Page" width='500' src="./images/Screenshot_SolarSysQuack.png" />
+
+### **_Planet Page_**
+
+<img alt="planet page" width='500' src="./images/Screenshot_SSQ_Planet_Page.png" />
+
+### **_Moon Data Display_**
+
+<img alt="moon data page" width='500' src="./images/Screenshot_SSQ_Moon_Data.png" />
+
 ---
 ## Quackathon Prompt
 
