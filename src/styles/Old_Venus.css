@@ -4,8 +4,8 @@
   border-radius: 50%;
   height: 280px;
   width: 280px;
-  background: radial-gradient(circle at center, #eb9737 0%, rgb(243, 102, 15) 47%, #eb3b06 100%);
-  box-shadow: inset 15px 0 14px 3px rgb(80, 2, 2);
+  background: radial-gradient(circle at center, #eb9737 0%, #f3660f 47%, #eb3b06 100%);
+  box-shadow: inset 20px 0 16px 3px rgb(80, 2, 2);
 }
 
 .space #Venus {
@@ -34,10 +34,16 @@
   z-index: -1;
 }
 
-.VenusLine1 {
+#Venus:before {
+  content: "";
   position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(to bottom, rgba(255,255,224,.5) 35%, rgba(243, 102, 15,0.1) 65%, rgba(255,255,224,0.5) 100%);
+  background: radial-gradient(circle at 60% 10px, rgb(224, 110, 79));
+  box-shadow: -80px 15px 80px 10px rgba(216, 54, 5, 0.9) inset;
+  filter: blur(5px);
+  z-index: 2;
 }
