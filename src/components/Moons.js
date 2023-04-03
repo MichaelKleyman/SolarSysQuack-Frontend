@@ -1,4 +1,5 @@
 import '../styles/Moons.css';
+import { BsMoonStarsFill } from 'react-icons/bs';
 
 const Moons = ({ moons }) => {
   return (
@@ -21,7 +22,10 @@ const Moons = ({ moons }) => {
           ))
         ) : (
           <div>
-            <div className='notfound-container'>No Moons On This Planet</div>
+            <div className='notfound-container'>
+              <BsMoonStarsFill color='blue' style={{ paddingRight: '1rem' }} />
+              No Moons On This Planet
+            </div>
           </div>
         )}
       </section>
