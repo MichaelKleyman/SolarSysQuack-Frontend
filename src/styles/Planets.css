@@ -129,6 +129,13 @@ body {
   color: rgb(188, 224, 255);
 }
 
+#planet-title-img {
+  background-image: url("../images/stars.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .mini-navbar {
   display: flex;
   align-items: center;

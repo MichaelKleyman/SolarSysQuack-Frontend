@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router';
 import { useParams } from 'react-router';
 import { BiArrowBack } from 'react-icons/bi';
 import { Client, BASE_URL } from './api';
-import starsImg from '../images/stars.jpg';
 import Moons from './Moons';
 import Facts from './Facts';
 import Overview from './Overview';
@@ -46,12 +45,7 @@ const Planet = () => {
 
   return (
     <div>
-      <div style={{ backgroundColor: 'rgb(0 0 0 / 0.6)' }}>
-        <img
-          className='planet-background'
-          src={starsImg}
-          alt='background'
-        />
+      <div id="planet-title-img" style={{ backgroundColor: 'rgb(0 0 0 / 0.6)' }}>
         <button className='go-back' onClick={() => navigate('/')}>
           <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
           Go back

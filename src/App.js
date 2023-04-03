@@ -21,7 +21,6 @@ function App() {
   useEffect(() => {
     const getPlanetData = async () => {
       let planetData = await Client.get(`${BASE_URL}/quackBack/planet`);
-      console.log(planetData.data);
       setPlanets(planetData.data);
     };
     getPlanetData();
