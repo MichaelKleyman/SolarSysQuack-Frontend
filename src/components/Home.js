@@ -6,8 +6,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useNavigate } from 'react-router';
-import { VscSourceControl } from 'react-icons/vsc';
-import { TbHandClick } from 'react-icons/tb';
 import Footer from './Footer';
 
 const Home = ({ planets }) => {
@@ -54,12 +52,6 @@ const Home = ({ planets }) => {
                   <div className={`${planet.name}Line5`}></div>
                   <div className={`${planet.name}Rings`}></div>
                 </div>
-              </div>
-              <div className='click-here'>
-                <Button variant='contained'>
-                  <TbHandClick style={{ paddingRight: '1rem' }} />
-                  Click Me
-                </Button>
               </div>
             </div>
           </div>

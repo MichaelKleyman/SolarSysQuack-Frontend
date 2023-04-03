@@ -47,7 +47,11 @@ const Planet = () => {
   return (
     <div>
       <div style={{ backgroundColor: 'rgb(0 0 0 / 0.6)' }}>
-        <img className='planet-background' src={starsImg} alt='background' />
+        <img
+          className='planet-background'
+          src={starsImg}
+          alt='background'
+        />
         <button className='go-back' onClick={() => navigate('/')}>
           <BiArrowBack size={30} style={{ paddingRight: '1rem' }} />
           Go back
