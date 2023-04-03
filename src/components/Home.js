@@ -7,6 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useNavigate } from 'react-router';
 import { VscSourceControl } from 'react-icons/vsc';
+import { TbHandClick } from 'react-icons/tb';
 import Footer from './Footer';
 
 const Home = ({ planets }) => {
@@ -54,17 +55,12 @@ const Home = ({ planets }) => {
                   <div className={`${planet.name}Rings`}></div>
                 </div>
               </div>
-              <a
-                className='source'
-                href={`https://solarsystem.nasa.gov/planets/${planet.name.toLowerCase()}/overview/`}
-                target='_blank'
-                rel='noreferrer'
-              >
+              <div className='click-here'>
                 <Button variant='contained'>
-                  <VscSourceControl style={{ paddingRight: '1rem' }} />
-                  Source
+                  <TbHandClick style={{ paddingRight: '1rem' }} />
+                  Click Me
                 </Button>
-              </a>
+              </div>
             </div>
           </div>
         ))}

@@ -116,7 +116,9 @@ const Planet = () => {
         </p>
       </div>
       <div className='bottom-container'>
-        {overview && <Overview overview={planet?.overview} />}
+        {overview && (
+          <Overview overview={planet?.overview} name={planet?.name} />
+        )}
         {facts && <Facts planet={planet} />}
         {moons && <Moons moons={planet?.moons} />}
       </div>
