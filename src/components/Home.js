@@ -6,6 +6,8 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useNavigate } from 'react-router';
+import { VscSourceControl } from 'react-icons/vsc';
+import Footer from './Footer';
 
 const Home = ({ planets }) => {
   const [open, setOpen] = useState(false);
@@ -52,9 +54,23 @@ const Home = ({ planets }) => {
                   <div className={`${planet.name}Rings`}></div>
                 </div>
               </div>
+              <a
+                className='source'
+                href={`https://solarsystem.nasa.gov/planets/${planet.name.toLowerCase()}/overview/`}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <Button variant='contained'>
+                  <VscSourceControl style={{ paddingRight: '1rem' }} />
+                  Source
+                </Button>
+              </a>
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <Footer />
       </div>
       <Dialog
         open={open}

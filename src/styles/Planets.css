@@ -12,6 +12,7 @@ body {
   place-items: center;
   gap: 8px;
   margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 
 .card:hover {
@@ -179,4 +180,8 @@ body {
 
 .bottom-container {
   margin-bottom: 10rem;
+}
+
+.source {
+  text-decoration: none;
 }
