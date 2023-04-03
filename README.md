@@ -30,24 +30,27 @@ Due: 4-2-2023, 11:59 PDT
 
 A short hackathon project provided through the #DearJuniorDev Discord Server. The theme for this project is to build an interactive website that provides information on the planets of the solar system (refer to the full prompt below). For this project, our team of three chose to use the PERN stack, as shown in the technologies section, and this repo hosts the frontend for our project. To view our project, one may visit the deployed version provided below.
 
-/// Add info on frontend deployment
+To get started with coding this project, one will need to install the proper technologies, as refered to in the technology section. One can then `fork` and `clone` the repository, then run `npm install` to install the dependencies. To start up an instance on the local server, run `npm start` and the site will launch on localhost:3000.
 
 ---
 ## Project Links
 
 [ERD](https://drive.google.com/file/d/1EPkEpEISBgIFE8sKZ55jtUETzgNYlR_6/view?usp=sharing)
 
-[Backend Repo](https://github.com/pfknight8/SolarSysQuack) 
+[Backend Repo](https://github.com/pfknight8/SolarSysQuack)
+
+[Project Deployment](https://solar-system-quack.vercel.app/)
 
 ---
 ## Features
 
-- [ ] Planets are made entirely out of CSS w/o imported assets
-- [ ] Planets can be selected to display modal with a brief synopsis of the planet info
-- [ ] The modal can be clicked to view more information about each planet on their info 'page'
-- [ ] The additional planet info can be shown by clicking the respective links on the nav bar
-- [ ] Planet moons, if applicable, are also displayed on info 'page' of planet
-- [ ] Moons of planets can be shown when the Moons link on the navbar is clicked
+- [x] Planets are made entirely out of CSS w/o imported assets
+- [x] Planets can be selected to display modal with a brief synopsis of the planet info
+- [x] The modal can be clicked to view more information about each planet on their info 'page'
+- [x] The additional planet info can be shown by clicking the respective links on the nav bar
+- [x] Planet moons, if applicable, are also displayed on info 'page' of planet
+- [x] Moons of planets can be shown when the Moons link on the navbar is clicked
+- [x] Site is deployed, with frontend linking up to backend
 
 ---
 ## Screenshots
@@ -113,7 +116,7 @@ Credit: DevJessParker 03/24/2023
 Any relevant resources or code snippets can be referenced (linked) to here.
 
 - [Windows To The Universe](https://www.windows2universe.org/our_solar_system/moons_table.html)
-- [Sequelize](https://sequelize.org/docs/v6/getting-started/) Documents
-- [PostgreSQL](https://www.postgresql.org/docs/) Documents
-- [Express.js](https://expressjs.com/en/starter/installing.html) Documents
+- NASA [Solar System](https://solarsystem.nasa.gov/planets/overview/) Planet Overview
+- [React](https://react.dev/) Documents
 - [Node.js](https://nodejs.org/en/docs) Documents
+- [Axios](https://axios-http.com/docs/intro) Documents
