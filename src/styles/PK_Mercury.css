@@ -4,7 +4,7 @@
   height: 280px;
   width: 280px;
   background: radial-gradient(circle at 50% 30%, rgb(200, 200, 200), rgb(144, 144, 144));
-  box-shadow: inset 8px 0px 10px 2px rgb(13, 13, 13);
+  box-shadow: inset 18px 0px 30px 2px rgb(13, 13, 13);
 }
 
 .space #Mercury {
