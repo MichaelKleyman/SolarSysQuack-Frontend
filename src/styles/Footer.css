@@ -1,0 +1,63 @@
+.footer-container {
+  padding: 1rem;
+  background-color: rgb(109, 109, 243);
+  color: white;
+  width: 100%;
+  height: 32vh;
+}
+
+.meet-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: light;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  place-items: center;
+}
+
+.github-icon:hover {
+  transition-duration: 300ms;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: white;
+}
+
+.linkedin-icon:hover {
+  transition-duration: 300ms;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: white;
+}
+
+.our-pics {
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 2px #e6dede);
+}
+
+.persons-container {
+  align-items: center;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px;
+  place-items: center;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(210, 198, 198);
+  font-size: 13px;
+}
