@@ -54,12 +54,12 @@
   position: absolute;
   left: 100px;
   top: 45px;
-  width: 240px;
+  width: 230px;
   height: 45px;
   border-top: transparent;
   border-bottom: 8px solid rgb(231, 229, 223, .2);
   rotate: 35deg;
-  translate: -25px;
+  transform: translateX(-10%) translateY(30%);
   border-radius: 40% 40%;
   background: transparent;
 }

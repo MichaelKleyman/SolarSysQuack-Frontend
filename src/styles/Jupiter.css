@@ -54,7 +54,7 @@
   height: 10%;
   border-top: 5px transparent;
   border-bottom: 15px solid rgba(231, 229, 223, 0.219);
-  transform: translateX(32%) translateY(-15%);
+  transform: translateX(32%) translateY(10%);
   border-radius: 40% 40%;
   background: transparent;
 }
